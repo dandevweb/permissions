@@ -11,6 +11,16 @@
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
                 </div>
+
+                <div class="bg-indigo-50 p-6 border-b border-indigo-400">
+
+                    @can('edit-articles')
+                        can
+                    @else
+                        cannot
+                    @endcan
+
+                </div>
             </div>
         </div>
     </div>
